@@ -20,7 +20,7 @@ body {
 
 .container {
   display: flex;
-  height: 80vh;
+  height: 130vh;
   width: 40%;
   margin: 7em auto;
   background: var(--container);
@@ -31,35 +31,37 @@ body {
   border-radius: 20px;
 }
 
-profile-image {
+.profile-image {
   max-width: 100px;
+  width: 70%;
   height: auto;
   border-radius: 50%;
+  margin: 1em auto;
 }
 
 h1 {
   color: var(--text);
   font-size: 1.5em;
-  margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
 
 span {
   color: var(--herotext);
   font-size: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 p {
   font-size: 1em;
   margin-bottom: 0.5em;
+  color: rgba(255, 255, 255, 0.767);
 }
 .button {
   width: 80%;
-  height: 10%;
+  height: 7%;
   background-color: var(--button);
-  margin: auto;
-  padding: 10px;
+  margin: 0.8em;
+  padding: 1em;
   text-align: center;
   border-radius: 10px;
   font-size: 1.2em;
@@ -69,4 +71,9 @@ p {
   background-color: var(--herotext);
   cursor: pointer;
   color: var(--background);
+}
+
+.buttonin {
+  width: 100px;
+  height: 50px;
 }
