@@ -5,11 +5,47 @@
   --text: #ffffff;
   --herotext: #c5f82a;
 }
-
-@media screen and (min-width: 820px) {
+/* mobile phones*/
+@media screen and (max-width: 480px) {
   .container {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 0.9rem;
+    .button {
+      width: 85%;
+      height: 1%;
+      background-color: var(--button);
+      margin: 0.6em;
+      padding: 1em;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+    .profile-image {
+      max-width: 100px;
+      width: 40%;
+      height: auto;
+      border-radius: 50%;
+      margin: 1em auto;
+    }
+    @media screen and (max-height: 1180px) {
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1em;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 850px) and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    height: 70%;
     margin: 0 auto;
     padding: 1em;
     font-size: 0.8rem;
@@ -23,48 +59,26 @@
       border-radius: 10px;
       font-size: 1.2em;
     }
-    @media screen and (max-height: 1180px) {
-      .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 1em;
-        font-size: 0.8rem;
-      }
-    }
   }
 }
 
-@media screen and (max-width: 480px) {
+/* laptops*/
+@media screen and (min-width: 1366px) {
   .container {
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: auto;
     margin: 0 auto;
     padding: 1em;
-    font-size: 0.6rem;
+    font-size: 1rem;
     .button {
-      width: 70%;
-      height: 1%;
+      width: 90%;
+      height: 7%;
       background-color: var(--button);
-      margin: 0.6em;
+      margin: 1.3em;
       padding: 1em;
       text-align: center;
       border-radius: 10px;
-      font-size: 1em;
-    }
-    .profile-image {
-      max-width: 100px;
-      width: 30%;
-      height: auto;
-      border-radius: 50%;
-      margin: 1em auto;
-    }
-    @media screen and (max-height: 1180px) {
-      .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 1em;
-        font-size: 0.8rem;
-      }
+      font-size: 1.2em;
     }
   }
 }
@@ -83,8 +97,8 @@ body {
 
 .container {
   display: flex;
-  height: auto;
-  width: 40%;
+  max-height: 130vh;
+  max-width: 80vw;
   margin: 7em auto;
   background: var(--container);
   flex-direction: column;
@@ -121,10 +135,10 @@ p {
 }
 .button {
   width: 80%;
-  height: 7%;
+  height: 10%;
   background-color: var(--button);
   margin: 0.8em;
-  padding: 1em;
+  padding: 1.5em;
   text-align: center;
   border-radius: 10px;
   font-size: 1.2em;
@@ -136,7 +150,8 @@ p {
   color: var(--background);
 }
 
-.buttonin {
-  width: 100px;
-  height: 50px;
+.attribution {
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.767);
+  margin-top: 1em;
 }
