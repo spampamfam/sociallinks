@@ -1,4 +1,31 @@
+:root {
+  --background: #141414;
+  --container: #1f1f1f;
+  --button: #333333;
+  --text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: inter, sans-serif;
-  background-color: hsl(210, 60%, 98%);
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 40%;
+  margin: 7em auto;
+  background: var(--container);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
 }
